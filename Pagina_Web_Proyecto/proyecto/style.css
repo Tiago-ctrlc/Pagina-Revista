@@ -1,0 +1,192 @@
+/* --- RESET BÁSICO --- */
+html, body {
+    /* Elimina los márgenes y rellenos por defecto del navegador para evitar bordes blancos */
+    margin: 0;
+    padding: 0;
+}
+
+/* --- CONFIGURACIÓN GLOBAL DE SECCIONES --- */
+.pantalla-completa {
+    width: 100%;
+    /* Asegura que cada sección mida al menos el 100% de la altura de la pantalla */
+    min-height: 100vh; 
+    /* Flexbox: Organiza los elementos internos en una columna centrada */
+    display: flex;
+    flex-direction: column;
+    /* Incluye el padding dentro del cálculo del tamaño total del elemento */
+    box-sizing: border-box;
+    /* Tipografía principal y suavizado de fuente */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --- SECCIÓN 1: VÍDEO / PRINCIPAL --- */
+.seccion-1 {
+    /*Aplicamos la fuente a todo el proyecto*/
+    font-family: 'Montserrat', sans-serif;
+    /* Suavizado de fuente para que se vea más fina en pantallas oscuras */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Fondo con capa oscura (75% negro) sobre la imagen para resaltar el contenido */
+    background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
+                url('/proyecto/imagenes/imagen_fondo.png');
+    color: white;
+    /* Centra el contenido (video/texto) vertical y horizontalmente */
+    justify-content: center;
+    align-items: center;
+    /* La imagen de fondo cubre todo el espacio sin deformarse */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/* Contenedor del video con dimensiones fijas */
+.video {
+    width: 700px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste de la imagen o video para que llene su contenedor sin salirse */
+.imagen-ajustada {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Corta cualquier sobrante visual */
+}
+
+/* --- SECCIÓN 2: PREMISA / TEXTO --- */
+.seccion-2 {
+    /* Aplicamos la fuente a todo el proyecto */
+    font-family: 'Montserrat', sans-serif;
+    /* Suavizado de fuente para que se vea más fina en pantallas oscuras */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Fondo oscuro con una segunda imagen de fondo */
+    background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
+                url('/proyecto/imagenes/imagen_fondo2.png');
+    color: white;
+    justify-content: center; 
+    align-items: center;    
+    padding: 50px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Div para el área de texto con una línea decorativa inferior */
+.seccion-texto {
+    width: 700px;
+    margin-bottom: -5%; /* Ajuste negativo para acercar el contenido siguiente */
+    border-bottom: 2px solid white; /* Línea blanca horizontal */
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* Bloque que contiene los párrafos de la premisa */
+.contenido-premisa {
+    max-width: 900px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+/* Estilo del subtítulo dentro de la premisa */
+.contenido-premisa h2 {
+    letter-spacing: 5px; /* Espaciado entre letras elegante */
+    margin-bottom: 100px;
+}
+
+/* Título especial donde la línea inferior solo mide lo que mide el texto */
+.titulo {
+    width: fit-content; /* Se ajusta al ancho de la palabra */
+    margin-left: auto;  /* Centra el bloque horizontalmente */
+    margin-right: auto;
+    border-bottom: 2px solid white;
+}
+
+/* --- FOOTER DE SÍMBOLOS (SABER, SEMBRAR, CREAR) --- */
+.footer-simbolos {
+    margin-top: 25%; /* Gran espacio superior para empujar los símbolos al fondo */
+    letter-spacing: 3px;
+}
+
+/* Colores específicos para cada concepto (Gris, Rojizo, Naranja) */
+.saber {
+    color: #808080;
+}
+
+.sembrar {
+    color: #A04B4B;
+}
+
+.crear {
+    color: #D48C45;
+}
+
+/*******************************************ENCABEZADO**************************************/
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: linear-gradient(gray, gray);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+div{
+    text-decoration: none;
+}
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img{
+    height: 70px;
+    margin-right: 5px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.box-texto1{
+    display: block; 
+}
+
+.Titulo1{
+    font-size: 13px;
+    margin: -5px;
+    ;
+}
+.Titulo2{
+    font-size: 29px;
+    margin: -6px;
+    
+}

@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
+                url('/editorial/imagenes/imagen_fondo.png');
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedor-editorial {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espacio entre el libro y el texto */
+    box-sizing: border-box;
+    overflow: hidden; /* Evita que el contenido se desborde del contenedor */
+}
+
+.texto-inferior {
+    max-width: 600px;
+    text-align: center;
+}

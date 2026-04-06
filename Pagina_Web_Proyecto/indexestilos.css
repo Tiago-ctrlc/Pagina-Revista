@@ -1,0 +1,314 @@
+html, body {
+    /* Elimina los márgenes y rellenos por defecto del navegador para evitar bordes blancos */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+div{
+    text-decoration: none;
+    
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: linear-gradient(gray, gray);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img{
+    height: 70px;
+    margin-right: 5px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.box-texto1{
+    display: block; 
+}
+
+.Titulo1{
+    font-size: 13px;
+    margin: -5px;
+    ;
+}
+.Titulo2{
+    font-size: 29px;
+    margin: -6px;
+    
+}
+/**************************************************************/
+/*CSS CUERPO*/
+/* --- CONFIGURACIÓN DE LAS SECCIONES --- */
+.pantalla-completa {
+    width: 100%;
+    min-height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* --- ESTILO SECCIÓN 1 (Lo que ya habías hecho) --- */
+.seccion-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/proyecto/imagenes/imagen_fondo.png');
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.seccion-texto p{
+    max-width: 800px;
+    margin-top: 8rem;
+    font-size: 23px;
+}
+
+.boton-ver{
+    margin-top: 1rem;
+    color: aliceblue; /* Color café/dorado de los símbolos */
+    padding: 3px 5px; /* Tamaño del botón */
+    border: 1px solid white; /* Borde blanco */
+    background: rgba(0,0,0,0.4); /* Fondo transparente */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de botón */
+}
+
+button:hover{
+    color: #8b5a2b;
+}
+
+
+/* --- ESTILO SECCIÓN 2 (Fondo oscuro sólido o con otra imagen) --- */
+.seccion-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/proyecto/imagenes/imagen_fondo2.png');
+    color: white;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;    /* Centra el contenido horizontalmente */
+    padding: 50px;
+    text-align: center;
+}
+
+.contenido-premisa {
+    max-width: 800px; /* Para que el texto no se estire demasiado a los lados */
+}
+
+.contenido-premisa h2 {
+    letter-spacing: 5px;
+    margin-bottom: 100px;
+}
+
+.footer-simbolos {
+    margin-top: 50px;
+    color: #8b5a2b; /* Color café/dorado de los símbolos */
+    letter-spacing: 3px;
+}
+/*******************************************************/
+
+/*HOJA 2 CSS*/
+
+#contenido2 {
+    padding: 4rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagenes/imagen_fondo1.png');
+    background-size: cover;
+    background-position: center;
+    /* Flex para centrar todo el bloque en la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido2-grid {
+    display: grid;
+    /* Forzamos 2 columnas exactamente: una para el texto, otra para los logos */
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem; /* Separación principal entre el texto y el bloque de logos */
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+}
+
+/* --- ESTILOS DEL TEXTO --- */
+.contenido2-card.texto-container {
+    text-align: center; /* Mantiene el texto centrado en su propia columna */
+}
+
+.contenido2-card.texto-container h2 {
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* --- ESTILOS DE LOS LOGOS --- */
+/* ... resto de tu código CSS (#contenido2, .contenido2-grid, .texto-container) ... */
+
+/* --- ESTILOS DE LOS LOGOS (Modificados) --- */
+.contenido2-card.logos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* La línea blanca vertical */
+    border-left: 2px solid white;  
+    padding-left: 1rem;   /* 1. Reducimos esto para que la línea esté más cerca de los logos */
+    margin-left: -1rem;     /* 2. Un margen negativo acerca la línea al bloque de TEXTO */
+    height: 120%;            /* 3. Forzamos que el contenedor ocupe casi todo el alto */
+    align-self: stretch;
+}
+
+.logo-blanco {
+    width: 35%; /* <-- Achicamos el logo blanco (antes era aprox 45%) */
+    max-width: 200px; /* Un máximo más pequeño */
+    object-fit: contain;
+}
+
+.logo-rojo {
+    width: 55%; /* <-- Agrandamos el logo rojo */
+    max-width: 300px; /* Un máximo más grande */
+    object-fit: contain;
+    /* Mantenemos el efecto de cercanía/superposición */
+    margin-left: -20px; 
+    z-index: 2;
+}
+
+/* ... resto de tu código CSS (Responsividad) ... */
+
+/* --- RESPONSIVIDAD (Para celulares) --- */
+@media (max-width: 768px) {
+    .contenido2-grid {
+        grid-template-columns: 1fr; /* Pasa a 1 sola columna */
+        gap: 2rem;
+    }
+    .contenido2-card.logos-container {
+        border-left: none; /* Quitamos la línea vertical */
+        border-top: 2px solid white; /* Ponemos una línea horizontal arriba */
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+}
+/*************************************************************************************************/
+/* --- NUEVA SECCIÓN ID "contenido3" (Imagen 2) --- */
+
+/* 1. ESTILOS GENERALES (Desktop primero) */
+#contenido3 {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/imagenes/imagen_fondo2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.contenido3-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    /* Aumentamos el ancho máximo para que el texto se vaya a las esquinas */
+    max-width: 1100px; 
+    gap: 2rem;
+    color: white;
+    align-items: center;
+}
+
+/* Tipografía */
+.bloque-texto p {
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 1.1rem;
+}
+
+.texto-derecha { text-align: left; }
+.texto-izquierda { text-align: right; }
+
+/* Control de logos */
+.bloque-logo { display: flex; }
+.bloque-logo:not(.logo-orden-movil) { justify-content: flex-end; } /* Corazón a la derecha de su celda */
+.bloque-logo.logo-orden-movil { justify-content: flex-start; } /* Nexo4 a la izquierda de su celda */
+
+.logo-red { width: 260px; height: auto; }
+.logo-white { width: 180px; height: auto; }
+
+/* SÍMBOLOS (Footer) */
+.footer-simbolos {
+    grid-column: 1 / -1; /* OBLIGA a los símbolos a ocupar las 2 columnas y estar abajo */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+}
+
+.saber { color: #808080; }
+.sembrar { color: #A04B4B; }
+.crear { color: #D48C45; }
+
+/* --- RESPONSIVIDAD (Móviles) --- */
+@media (max-width: 768px) {
+    .contenido3-grid {
+        grid-template-columns: 1fr; /* Una sola columna */
+        max-width: 100%;
+        text-align: center;
+    }
+
+    /* Forzamos el orden visual: Logo 1 -> Texto 1 -> Logo 2 -> Texto 2 -> Símbolos */
+    .bloque-1-logo { order: 1; }
+    .bloque-1-texto { order: 2; }
+    .bloque-2-logo { order: 3; }
+    .bloque-2-texto { order: 4; }
+    .footer-simbolos { order: 5; }
+
+    .bloque-logo, .bloque-texto {
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .footer-simbolos {
+        flex-wrap: nowrap; /* Mantiene "Saber Sembrar Crear" uno al lado del otro */
+        gap: 10px;
+        font-size: 0.75rem;
+    }
+
+    .logo-red, .logo-white { width: 140px; }
+}

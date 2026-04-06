@@ -1,0 +1,150 @@
+/* --- CONFIGURACIÓN GLOBAL Y FONDO --- */
+body {
+    /* Crea una capa negra traslúcida sobre la imagen para mejorar la lectura del texto */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('/contacto/imagenes/imagen_fondo.png');
+    
+    /* Ajusta la imagen exactamente al tamaño de la ventana (sin recortes/zoom) */
+    background-size: 100% 100%;
+    background-position: center;
+    
+    /* Asegura que el fondo y el contenido ocupen al menos todo el alto de la pantalla */
+    min-height: 100vh;
+    margin: 0;
+    
+    /* Activa Flexbox para organizar los bloques de logos y texto en columna (uno arriba de otro) */
+    display: flex;
+    flex-direction: column;
+    
+    /* Incluye el padding en el cálculo del tamaño total para evitar desbordamientos */
+    box-sizing: border-box;
+    
+    /* Tipografía: Prioriza Arial/Helvetica y suaviza los bordes de las letras */
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* --- CONTENEDOR DE LOGOS (SUPERIOR) --- */
+.seccion-logos {
+    display: flex;
+    justify-content: center; /* Centra los logos horizontalmente en la pantalla */
+    gap: 100px;              /* Espacio de separación horizontal entre los dos logos */
+    padding-top: 200px;      /* Espacio superior para alejar los logos del borde/header */
+    width: 100%;
+}
+
+/* --- ESTILO DE LAS IMÁGENES DE LOGOS --- */
+.empresa-img {
+    width: 200px;            /* Tamaño de ancho fijo para los logos */
+    height: auto;            /* Mantiene la proporción original de la imagen */
+}
+
+/* REGLA DE CORRECCIÓN: Asegura que el logo de la derecha no se deforme */
+.logo-der, .empresa-img {
+    height: auto;
+    object-fit: cover; 
+}
+
+/* --- CONTENEDOR DE TEXTO (DESPLAZAMIENTO) --- */
+.seccion-texto {
+    /* Hace que este contenedor crezca para ocupar el espacio sobrante hacia abajo */
+    flex-grow: 1;           
+    display: flex;
+    
+    /* Centra el bloque de texto verticalmente en el espacio disponible */
+    align-items: center;     
+    
+    /* Empuja el bloque de texto hacia la derecha de la pantalla */
+    justify-content: flex-end; 
+    
+    /* CONTROL DE POSICIÓN: Ajusta este % para mover el texto más a la izquierda o derecha */
+    padding-right: 20%;      
+}
+
+/* --- BLOQUE DE CONTACTO (ESTILO INTERNO) --- */
+.caja-contacto {
+    text-align: center;      /* Centra el texto dentro de su propia caja */
+    padding: 20px;
+    border-radius: 10px;     /* Redondea las esquinas (se nota si pones fondo traslúcido) */
+}
+
+/* Alineación de iconos y texto en cada párrafo */
+.caja-contacto p {
+    display: flex;
+    justify-content: center; /* Alinea los iconos y el texto al centro horizontalmente */
+    align-items: center;     /* Alinea los iconos y el texto al centro verticalmente */
+    gap: 10px;               /* Espacio entre el icono (❂, 📞, @) y el texto */
+    margin: 10px 0;          /* Separación vertical entre cada línea de contacto */
+}
+
+/*******************************************ENCABEZADO**************************************/
+
+
+/*******************************************ENCABEZADO**************************************/
+
+
+header{
+    display: flex;
+    min-height: 70px;
+    background: linear-gradient(gray, gray);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+div{
+    text-decoration: none;
+}
+.contenedor-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img{
+    height: 70px;
+    margin-right: 5px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.box-texto1{
+    display: block; 
+}
+
+.Titulo1{
+    font-size: 13px;
+    margin: -5px;
+    ;
+}
+.Titulo2{
+    font-size: 29px;
+    margin: -6px;
+    
+}

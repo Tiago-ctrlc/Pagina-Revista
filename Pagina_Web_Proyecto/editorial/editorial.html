@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>PRO.Editorial</title>
+    
+</head>
+<body>
+    <div class="contenedor-editorial">
+        <div id="book">
+            <div class="page" data-density="hard">
+                <img src="/editorial/imagenes/Fase3_Johan_Mauricio_Ospina_Berrio_page-0001.jpg" alt="Portada" class="img-revista">
+            </div>
+        </div>
+
+        <div class="texto-inferior">
+            <p>La Revista VOCES DE LA SIERRA difunde la cultura, espiritualidad y vida cotidiana del pueblo arhuaco. A través de relatos, fotografías y enseñanzas de los mamos, la publicación muestra su relación sagrada con la naturaleza y los retos que enfrentan para proteger su territorio ancestral. La revista busca acercar al lector a la visión arhuaca y a la importancia de la Sierra Nevada como “corazón del mundo”</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const pageFlip = new St.PageFlip(document.getElementById("book"), {
+                width: 300, // Ancho de UNA página
+                height: 412, // Alto de UNA página
+                size: "fixed",
+                showCover: true,
+                drawShadow: true,
+                maxShadowOpacity: 0.5
+            });
+
+            // Cargar las páginas
+            pageFlip.loadFromHTML(document.querySelectorAll(".page"));
+
+            // Evento para verificar en consola que funciona el cambio
+            pageFlip.on('flip', (e) => {
+                console.log("Cambiando a la página: " + e.data);
+            });
+        });
+    </script>
+</body>
+</html>
