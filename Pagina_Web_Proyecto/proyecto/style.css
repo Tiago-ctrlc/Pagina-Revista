@@ -28,7 +28,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     /* Fondo con capa oscura (75% negro) sobre la imagen para resaltar el contenido */
     background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
-                url('/proyecto/imagenes/imagen_fondo.png');
+                url('../proyecto/imagenes/imagen_fondo.png');
     color: white;
     /* Centra el contenido (video/texto) vertical y horizontalmente */
     justify-content: center;
@@ -62,7 +62,7 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
     /* Fondo oscuro con una segunda imagen de fondo */
     background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
-                url('/proyecto/imagenes/imagen_fondo2.png');
+                url('../proyecto/imagenes/imagen_fondo2.png');
     color: white;
     justify-content: center; 
     align-items: center;    

@@ -11,7 +11,7 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.755), rgba(0, 0, 0, 0.755)), 
-                url('/editorial/imagenes/imagen_fondo.png');
+                url('../editorial/imagenes/imagen_fondo.png');
     color: white;
     background-size: cover;
     background-position: center;

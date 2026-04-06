@@ -2,7 +2,7 @@
 body {
     /* Crea una capa negra traslúcida sobre la imagen para mejorar la lectura del texto */
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('/contacto/imagenes/imagen_fondo.png');
+                url('../contacto/imagenes/imagen_fondo.png');
     
     /* Ajusta la imagen exactamente al tamaño de la ventana (sin recortes/zoom) */
     background-size: 100% 100%;

@@ -84,7 +84,7 @@ nav a:hover{
 
 /* --- ESTILO SECCIÓN 1 (Lo que ya habías hecho) --- */
 .seccion-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Pagina_Web_Proyecto/proyecto/imagenes/imagen_fondo.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Pagina-Revista/Pagina_Web_Proyecto/proyecto/imagenes/imagen_fondo.png');
     color: white;
     justify-content: center;
     align-items: center;
@@ -118,7 +118,7 @@ button:hover{
 /* --- ESTILO SECCIÓN 2 (Fondo oscuro sólido o con otra imagen) --- */
 .seccion-2 {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('Pagina_Web_Proyecto/proyecto/imagenes/imagen_fondo2.png');
+                url('./Pagina_Web_Proyecto/proyecto/imagenes/imagen_fondo2.png');
     color: white;
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center;    /* Centra el contenido horizontalmente */
@@ -149,7 +149,7 @@ button:hover{
     max-width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Pagina_Web_Proyecto//imagenes/imagen_fondo1.png');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./Pagina_Web_Proyecto/imagenes/imagen_fondo1.png');
     background-size: cover;
     background-position: center;
     /* Flex para centrar todo el bloque en la pantalla */
@@ -231,7 +231,7 @@ button:hover{
 /* 1. ESTILOS GENERALES (Desktop primero) */
 #contenido3 {
     min-height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('Pagina_Web_Proyecto//imagenes/imagen_fondo2.jpeg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../Pagina-Revista/Pagina_Web_Proyecto/imagenes/imagen_fondo2.jpeg');
     background-size: cover;
     background-position: center;
     display: flex;
