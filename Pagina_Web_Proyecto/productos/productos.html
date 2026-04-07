@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Archivo CSS -->
+<link rel="stylesheet" href="../productos/css_productos.css">
+
+<title>Productos</title>
+
 </head>
+
 <body>
-    
+
+
+
+    <header>
+        
+        <div class="contenedor-logo">
+            <div class="box-imagen">
+                <img src="../imagenes/Vector.png" alt="Logo Nexo 4" class="logo-img">
+            </div>
+
+            <div class="box-texto1">
+                <h2 class="Titulo1">Editorial</h2>
+                <h2 class="Titulo2">NEXO 4</h2>
+               
+            </div>
+
+            
+        </div>
+        
+        <nav>
+            <a href="../../index.html" class="nav-link">Inicio</a>
+            <a href="../proyecto/proyecto.html" class="nav-link">Proyecto</a>
+            <a href="../editorial/editorial.html" class="nav-link">Pro.Editorial</a>
+            <a href="../contacto/contacto.html" class="nav-link">Contacto </a>
+            <a href="../productos/productos.html" class="nav-link">Productos</a>
+            <a href="#" class="nav-link">Usuario</a>
+        </nav>
+    </header>
+
+
+<!-- Sección donde van los productos -->
+<section class="productos">
+
+            <!-- Producto 1 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/cafe.jpeg">
+                    <h3>Café Premium</h3>
+                </div>
+
+            <!-- Producto 2 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/miel.jpeg">
+                    <h3>Café Especial</h3>
+                </div>
+
+            <!-- Producto 3 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/miel_pocillos.jpeg">
+                    <h3>Café Gourmet</h3>
+                </div>
+
+            <!-- Producto 4 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/mochila1.jpeg">
+                    <h3>Café Exportación</h3>
+                </div>
+
+            <!-- Producto 5 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/mochila2.jpeg">
+                    <h3>Café Orgánico</h3>
+                </div>
+
+            <!-- Producto 6 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/mochila3.jpeg">
+                    <h3>Café Artesanal</h3>
+                </div>
+
+            <!-- Producto 7 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/vino.jpeg">
+                    <h3>Café Tostado</h3>
+                </div>
+
+            <!-- Producto 8 -->
+                <div class="producto" onclick="abrirModal()">
+                    <img src="../productos/imagenes/cafe.jpeg">
+                    <h3>Café Colombia</h3>
+                </div>
+            
+</section>
+
+<!-- Modal -->
+<div class="modal" id="modal">
+
+    <div class="modal-content">
+                    <!-- Botón cerrar -->
+                    <span class="cerrar" onclick="cerrarModal()">×</span>
+                <div class="modal-container">
+
+                    <!-- Imagenes scroll -->
+                        <div class="imagenes">
+                            <img src="../productos/imagenes/cafe.jpeg">
+                            <img src="../productos/imagenes/cafe.jpeg">
+                            <img src="../productos/imagenes/cafe.jpeg">
+                        </div>
+
+                    <!-- Descripción fija -->
+                        <div class="descripcion">
+                            <h2>Nombre Producto</h2>    
+                            <p>Aquí va la descripción del producto</p>
+                            <h3>$120.000</h3>
+                            <button>Comprar</button>
+                        </div>
+
+                </div>
+
+    </div>
+
+</div>
+
+<!-- Javascript -->
+<script src="../productos/js_productos.js"></script>
+
 </body>
 </html>
